@@ -35,7 +35,7 @@ public class QuizActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
         }
-       // mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
+        mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +53,7 @@ public class QuizActivity extends AppCompatActivity {
 // Does nothing yet, but soon!
             }
         });
-        mNextButton = (Button) findViewById(R.id.next_button);
+       mNextButton = (Button) findViewById(R.id.next_button);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
