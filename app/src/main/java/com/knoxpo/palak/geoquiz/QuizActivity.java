@@ -80,7 +80,7 @@ public class QuizActivity extends AppCompatActivity {
         updateQuestion();
     }
 
-    @Override
+                                                                                    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != Activity.RESULT_OK) {
             return;
